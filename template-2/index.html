@@ -45,10 +45,11 @@
 				<div class="col-sm-6">
 					<div class="form-group">
 						<label for="officeLocation">Office location</label>
-						<select name="officeLocation" id="ofcLoc" class="form-control">
-							<option value="1">Office location 1</option>
-							<option value="2">Office location 2</option>
-							<option value="3">Office location 3</option>
+						<select name="officeLocation" id="offc_location" class="form-control">
+							<option value="SINGAPORE">SINGAPORE</option>
+							<option value="SRILANKA">SRILANKA</option>
+							<option value="PAKISTAN">PAKISTAN</option>
+							<option value="MYANMAR">MYANMAR</option>
 						</select>
 					</div>
 				</div>
@@ -179,7 +180,7 @@
                                 <td rowspan="2" width="21" height="58" style="vertical-align: top; text-align: center;">
                                     <img src="images/location.png" style="margin: 5px 0 0" alt=""></td>
                                 <td colspan="5" rowspan="2" width="152" height="58">
-                                    <p style="font-size:13px; font-family: 'Poppins', sans-serif; color: white; margin: 0 0 0 5px; font-size: 10px; line-height: 1.2;">OECL (Singapore) Pte Ltd <br> Blk 511 Kampong Bahru Road <br> #04-02 Keppel Distripark <br> Singapore 099447</p></td>
+                                    <p style="font-size:13px; font-family: 'Poppins', sans-serif; color: white; margin: 0 0 0 5px; font-size: 10px; line-height: 1.2;" id="address_temp">Global Consolidators Pte Ltd<br> Block 511, Kampong Bahru Road, #04-05 Keppel Dstripark, Singapore 099447<br>+65 6908 4188,+65-96272211<br>Fax: +65 62706206<br>www.globalconsol.com</p></td>
                             </tr>
                             <tr>
                                 <td width="27" height="34" style="text-align: center;">
@@ -239,6 +240,14 @@
 </div>
 </div>
 </section>
+
+<span id="loc-SINGAPORE" style="display: none;">Global Consolidators Pte Ltd<br> Block 511, Kampong Bahru Road, #04-05 Keppel Dstripark, Singapore 099447<br>+65 6908 4188,+65-96272211<br>Fax: +65 62706206<br>www.globalconsol.com</span>
+<span id="loc-SRILANKA" style="display: none;">Global Consolidators lanka (pvt) ltd, Ceylinco House, 9th Floor, No 69 Janadhipathi Mawatha, Colombo 01,<br> Sri Lanka<br>+94 114477494/98,<br>Fax: +94 114477499<br>THILANKA ROHAN – GENERAL MANAGER<br>HP: +94 764434885</span>
+<span id="loc-PAKISTAN" style="display: none;">Global Consolidators pakistan (pvt) ltd<br>The Spot, 30-C, Stadium Lane<BR> #4 Khayaban-e-Shamsheer,<br> Near Abdul Aziz Mosque D.H.A Phase-V,Karachi, Pakistan<br>+92-21-35170941 (4 Lines), 92-300-8282511<br>Fax: 92-21-35170945<br>. KHALID RASHEED – CEO<br>khalid.pk@globalconsol.com</span>
+
+<span id="loc-MYANMAR" style="display: none;">Global Consolidators Ltd<br> No.608, Room 8B, Bo Soon Pat Tower,Merchant Street,<br> Pabedan Township,Yangon,<br> Myanmar<br>+951 377985, 243101, 243158<br>+959 73167939, 257383686<br>CTC : Thae Nu Nu San (Alice)<br>tnns@globalconsol.com<br>Skype:thaenunusan</span>
+
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 	<script src="js/script.js"></script>
@@ -428,8 +437,17 @@
 		var imgageData = getCanvas.toDataURL("image/png");
 		// Now browser starts downloading it instead of just showing it
 		var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
-		$("#btn-Convert-Html2Image").attr("download", "your_pic_name.png").attr("href", newData);
+		$("#btn-Convert-Html2Image").attr("download", "your_pic_name.jpg").attr("href", newData);
 		});
+	</script>
+
+	<script>
+		$("#offc_location").on("change",function(){
+			var loc_id 	=	$(this).val();
+			var address = 	$("#loc-"+loc_id).html();
+			$("#address_temp").html(address)
+	
+		})
 	</script>
 </body>
 </html>

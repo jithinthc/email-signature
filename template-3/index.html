@@ -438,7 +438,7 @@
 		var imgageData = getCanvas.toDataURL("image/png");
 		// Now browser starts downloading it instead of just showing it
 		var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
-		$("#btn-Convert-Html2Image").attr("download", "your_pic_name.png").attr("href", newData);
+		$("#btn-Convert-Html2Image").attr("download", "your_pic_name.jpg").attr("href", newData);
 		});
 	</script>
 </body>
