@@ -1,6 +1,6 @@
  <html>
 <head>
-<title>OECL Signature | With Photo</title>
+<title>OECL Signature</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,6 +17,7 @@
 		<h1 class="h4">Create Your email signature</h1>
 			<p>Enter your details in the below form and click generate button</p>
 			<hr>
+		<form id="contact_form">
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="form-group">
@@ -27,13 +28,13 @@
 				<div class="col-sm-6">
 					<div class="form-group">
 						<label for="firstName">First name</label>
-						<input type="text" class="form-control" id="firstName">
+						<input type="text" class="form-control" id="firstName" data-validetta="required">
 					</div>
 				</div>
 				<div class="col-sm-6">
 					<div class="form-group">
 						<label for="lastName">Last name</label>
-						<input type="text" class="form-control" id="lastName">
+						<input type="text" class="form-control" id="lastName" data-validetta="required">
 					</div>
 				</div>
 				<div class="col-sm-6">
@@ -65,7 +66,7 @@
 				<div class="col-sm-6">
 					<div class="form-group">
 						<label for="mobPhone">Mobile No.</label>
-						<input type="text" class="form-control" id="mobPhone">
+						<input type="number" class="form-control" id="mobPhone" data-validetta="required,number">
 					</div>
 				</div>
 				<div class="col-sm-6">
@@ -77,7 +78,7 @@
 				<div class="col-sm-6">
 					<div class="form-group">
 						<label for="email">Email</label>
-						<input type="text" class="form-control" id="email">
+						<input type="email" class="form-control" id="email" data-validetta="required,email">
 					</div>
 				</div>
 				<div class="col-sm-6">
@@ -120,14 +121,15 @@
 				
 				</div>
 			</div>
+		</form>
 	</div>
 </div>
 
 
-<div class="col-md-12">
+<div class="col-md-12" >
 	<div class="mx-auto border rounded mt-4 mb-5 pl-2 pr-3 py-2" style="width: 626px;">
 
-		<div class="temp_cls">
+		<div class="temp_cls" id="Table_02">
 		<!-- Code for template starts -->
 			<table id="Table_01"  width="600" height="169" border="0" cellpadding="0" cellspacing="0">
 				<style>
@@ -139,67 +141,67 @@
 					font-size: 12px;
 				}
 					</style>
-				<tr>
+				<tr class="img-upload-wrapper">
 					<td rowspan="5" width="86" height="168" style="text-align: center; vertical-align: top;">
 						<img src="" alt="Profile photo" style="max-width: 82%; margin-top: 8px; border: 1px solid;" id="image-preview"></td>
 				</tr>
 				<tr>
 					<td>
-						<table style="width: 100%;"  width="514" height="60" border="0" cellpadding="0" cellspacing="0">
+						<table style="width: 100%;"  width="614" height="60" border="0" cellpadding="0" cellspacing="0">
 							<tr>
 								<td colspan="2">
-									<a href="https://www.oecl.sg/" target="_blank">
-										<img src="images/02_logo.png" width="90" height="60" border="0" alt=""></a></td>
-								<td colspan="5" width="313" height="60">
+									<a href="http://www.oecl.sg/" target="_blank">
+										<img src="http://service.orangeot.com/template-1/images/02_logo.png" width="90" height="60" border="0" alt=""></a></td>
+								<td colspan="5" width="413" height="60">
 									<div style="padding: 5px 10px;">
-										<h3 style="font-size:20px; font-family: 'Poppins', sans-serif; margin: 0;"><span id="name_temp"></span></h3>
-										<p style="font-size:13px; font-family: 'Poppins', sans-serif; margin: 0;" id="designation_temp"></p>
+										<h3 style="font-size:22px; font-family: 'Poppins', sans-serif; margin: 0; font-weight: bold;"><span id="name_temp"></span></h3>
+										<p style="font-size:14px; font-family: 'Poppins', sans-serif; margin: 0;" id="designation_temp"></p>
 									</div></td>
 								<td>
-									<a href="https://fb.com" target="_blank">
-										<img src="images/04_fb-icon.png" width="23" height="60" border="0" alt="Facebook"></a></td>
+									<a href="https://www.facebook.com/oeclsingapore" target="_blank">
+										<img src="http://service.orangeot.com/template-1/images/04_fb-icon.png" width="23" height="60" border="0" alt="Facebook"></a></td>
 								<td>
-									<a href="https://linkedin.com" target="_blank">
-										<img src="images/05_linkedin.png" width="25" height="60" border="0" alt="Linkedin"></a></td>
+									<a href="https://www.linkedin.com/company/oecl" target="_blank">
+										<img src="http://service.orangeot.com/template-1/images/05_linkedin.png" width="25" height="60" border="0" alt="Linkedin"></a></td>
 								<td>
-									<a href="https://twitter.com" target="_blank">
-										<img src="images/06_twitter.png" width="25" height="60" border="0" alt="Twitter"></a></td>
+									<a href="https://twitter.com/oeclsg" target="_blank">
+										<img src="http://service.orangeot.com/template-1/images/06_twitter.png" width="25" height="60" border="0" alt="Twitter"></a></td>
 								<td>
-									<a href="https://instagram.com" target="_blank">
-										<img src="images/07_insta.png" width="38" height="60" border="0" alt="Instagram"></a></td>
+									<a href="https://www.instagram.com/oecl_logistics/" target="_blank">
+										<img src="http://service.orangeot.com/template-1/images/07_insta.png" width="38" height="60" border="0" alt="Instagram"></a></td>
 							</tr>
 						</table>
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<table style="width: 100%; background: rgb(236,27,32);"  width="514" height="57" border="0" cellpadding="0" cellspacing="0">
+						<table style="width: 100%; background: rgb(236,27,32);"  width="614" height="57" border="0" cellpadding="0" cellspacing="0">
 							<tr>
-								<td width="27" height="24" style="text-align: center;">
-									<img src="images/mob.png" style="margin: 3px 0 0"  alt="mobile icon"></td>
-								<td colspan="2" width="111" height="24" style="vertical-align: middle;">
-									<a href="tel:654" target="_blank" style="text-decoration: none;">
+								<td width="25" height="24" style="text-align: center;">
+									<img src="http://service.orangeot.com/template-1/images/mob.png" style="margin: 3px 0 0"  alt="mobile icon" id="mobphone_temp_icon"></td>
+								<td colspan="2" width="150" height="24" style="vertical-align: middle;">
+									<a href="tel:654" target="_blank" style="text-decoration: none;" id="mobphone_temp_href">
 										<p style="font-size:13px; font-family: 'Poppins', sans-serif; color: white; margin: 5px 0 0;" id="mobphone_temp"></p></a></td>
 								<td width="25" height="24" style="text-align: center;">
-									<img src="images/mail.png" style="margin: 3px 0 0" alt=""></td>
-								<td width="178" height="24">
-									<a href="mailto:ggh@ghg.com" target="_blank" style="text-decoration: none;">
+									<img src="http://service.orangeot.com/template-1/images/mail.png" style="margin: 3px 0 0" alt="" id="email_temp_icon"></td>
+								<td width="175" height="24">
+									<a href="mailto:ggh@ghg.com" target="_blank" style="text-decoration: none;" id="email_temp_href">
 										<p style="font-size:13px; font-family: 'Poppins', sans-serif; color: white; margin: 5px 0 0 5px;" id="email_temp"></p></a></td>
-								<td rowspan="2" width="21" height="58" style="vertical-align: top; text-align: center;">
-									<img src="images/location.png" style="margin: 5px 0 0" alt=""></td>
-								<td colspan="5" rowspan="2" width="152" height="58">
-									<p style="font-family: 'Poppins', sans-serif; color: white; margin: 6px 5px 6px;; font-size: 9px; line-height: 1.3;" id="address_temp">OECL (Singapore) Pte Ltd <br> Blk 511 Kampong Bahru Road <br> #04-02 Keppel Distripark <br> Singapore 099447<br>+65 6224 1338, +65 6224 1336<br>sumi@oecl.sg</p></td>
+								<td rowspan="2" width="25" height="58" style="vertical-align: top; text-align: center;">
+									<img src="http://service.orangeot.com/template-1/images/location.png" style="margin: 5px 0 0" alt=""></td>
+								<td colspan="5" rowspan="2" width="200" height="58">
+									<p style="font-family: 'Poppins', sans-serif; color: white; margin: 6px 5px 6px;; font-size: 9px; line-height: 1.3;" id="address_temp"><span style="font-weight: bold; font-size: 11px;">OECL (Singapore) Pte Ltd </span><br> Blk 511 Kampong Bahru Road <br> #04-02 Keppel Distripark <br> Singapore 099447</td>
 							</tr>
 							<tr>
-								<td width="27" height="34" style="text-align: center;">
-									<img src="images/tel.png" style="margin: 3px 0 0" alt=""></td>
-								<td colspan="2">
-									<a href="tel:654" target="_blank"  style="text-decoration: none;">
-										<p style="color: white; margin: 5px 0 0;" id="telphone_temp"></p></a></td>
 								<td width="25" height="34" style="text-align: center;">
-									<img src="images/skype.png" style="margin: 3px 0 0" alt=""></td>
-								<td>
-									<a href="skype:654" target="_blank" style="text-decoration: none;">
+									<img src="http://service.orangeot.com/template-1/images/tel.png" style="margin: 3px 0 0" alt="" id="telphone_temp_icon"></td>
+								<td colspan="2" width="124">
+									<a href="tel:654" target="_blank"  style="text-decoration: none;" id="telphone_temp_href">
+										<p style="color: white; margin: 5px 0 0;" id="telphone_temp"></p></a></td>
+								<td width="25" height="24" style="text-align: center;">
+									<img src="http://service.orangeot.com/template-1/images/skype.png" style="margin: 3px 0 0" alt="" id="skype_temp_icon"></td>
+								<td width="">
+									<a href="skype:654" target="_blank" style="text-decoration: none;" id="skype_temp_href">
 										<p style="font-size:13px; font-family: 'Poppins', sans-serif; color: white; margin: 5px 0 0 5px;" id="skype_temp"></p></a></td>
 							</tr>
 						</table>
@@ -208,15 +210,15 @@
 				
 				<tr>
 					<td colspan="11">
-						<img src="images/18_seperator.png" width="514" height="3" alt=""></td>
+						<img src="http://service.orangeot.com/template-1/images/18_seperator.png" width="614" height="3" alt=""></td>
 				</tr>
 
 				<!-- Image banner starts below-->
 				<tr>
 					<td colspan="11" id="image_banner_temp">
-						<img src="" id="image-preview1" width="514" style="margin: 5px 0 0;" alt="">
+						<img src="" id="image-preview1" width="614" style="margin: 5px 0 0;" alt="">
 					</td>
-					<td colspan="11" id="text_banner_temp" width="514" style="margin: 5px 0 0;" alt="">
+					<td colspan="11" id="text_banner_temp" width="614" style="margin: 5px 0 0;" alt="">
 						<p style=" margin: 0; font-size: 0.85rem; " id="text_banner_temp_data"></p>
 					</td>
 				</tr>
@@ -224,21 +226,25 @@
 
 			
 
-			<hr>
-			<div class="container-fluid">
-				<form >
-					<button type="button" class="btn btn-danger" id="button1" onclick="copyClipboard()">Copy</button>
-					<input id="btn-Preview-Image" type="button" class="btn btn-info" value="Download Preview"/>
-					
-				</form>
-			</div>
+			
 		</div>
+		<hr>
+	<div class="container-fluid temp_cls">
+		<form >
+			<button type="button" class="btn btn-danger" id="button1" onclick="copyClipboard()">Copy</button>
+			<button type="button" class="btn btn-secondary" id="button2" onclick="copyToClipboard_code('#Table_02')">Copy Source Code</button>
+			<input id="btn-Preview-Image" type="button" class="btn btn-secondary" value="Download Preview"/>
+			
+		</form>
+	</div>
 	</div>
 	
+	
+
 	<div class="mx-auto border rounded mt-4 mb-5 pl-2 pr-3 py-2" id="btn-Convert-div" style="display: none;">
 	<div id="previewImage"></div>
 	<hr>
-		<a id="btn-Convert-Html2Image" class="btn btn-secondary"  href="#" style="display: none;">Download</a>
+		<a id="btn-Convert-Html2Image" class="btn btn-danger"  href="#" style="display: none;">Download</a>
     </div>
 				
 				
@@ -248,28 +254,36 @@
 </section>
 
 
-<span id="loc-SINGAPORE" style="display: none;"> OECL (Singapore) Pte Ltd <br> Blk 511 Kampong Bahru Road <br> #04-02 Keppel Distripark <br> Singapore 099447 <br>+65 6224 1338, +65 6224 1336<br>sumi@oecl.sg</span>
-<span id="loc-PORTKLANG" style="display: none;"> OECL (Malaysia) SdnBhd <br> MTBBT 2, 3A-5, Jalan Batu Nilam 16, The Landmark (Behind AEON Mall) <br> Bandar Bukit Tinggi 2<br>41200,Klang, Selangor D.E.<br> +603 - 3319 2778 / 74 / 75 <br>+603 - 3319 2779, philip@oecl.sg</span>
-<span id="loc-PASIRGUDANG" style="display: none;">OECL (Malaysia) SdnBhd <br> Unit 20-03A, Level 20 Menara Zurich, 15 Jalan Dato Abdullah Tahir, 80300 Johor Bahru, 603-3319 2778/74/75<br>603–3319 2779,jairaj@oecl.sg</span>
-<span id="loc-CHENNAI" style="display: none;">OECL Shipping and Logistics Pvt Ltd, Zafrulla Tower, 2A,<br> 2nd Floor, Old # 126, New # 257, Angappa Naicken Street<br>Parry’s Corner, Chennai – 600001, +91 44 4500 4065,<br> +91 44 45004066, Kk@oecl.sg</span>
-<span id="loc-MUMBAI" style="display: none;">OECL Shipping and Logistics Pvt Ltd, 503, Midas, Sahar Plaza Complex, Sir M.V Road<br> Andheri East,Mumbai 400059<br>+91 22 40696606<br>gunvant.mum@oecl.sg</span>
-<span id="loc-DELHI" style="display: none;">OECL Shipping and Logistics Pvt Ltd<br>804 Madhuban Building <br> 55 Nehru Palace<br> New Delhi - 110019<br>+91 11 493224477 / 48 /49<br>sumanta@oecl.sg</span>
-<span id="loc-KOLKATA" style="display: none;">OECL Shipping and Logistics Pvt Ltd, Merlin Matrix, 3rd floor, Room No. 303<br> 10,D. N. BLOCK, SECTOR - V<br> SALT LAKE CITY,<br>Kolkata – 700091<br>+91 33 46025458 / 59 / 60/ 61<br>susen.dutta@oecl.sg</span>
-<span id="loc-INDONESIA" style="display: none;">PT.OECL Indonesia Logistic (Indonesia), 408, Lina Building, JL.HR Rasuna Said kav B7, Jakarta<br> +62 21 529 20292, 522 4887<br>+62 21 522 4884<br>logistics.jkt@oecl.sg</span>
-<span id="loc-THAILAND" style="display: none;">OECL (THAILAND) CO., LTD.<br>109 CCT Building, 3rd Floor<br>Rm.3,Surawong Road, Suriyawongse, Bangrak<br> Bangkok 10500 109 CCT Building<br> +662-634-3240, +662-634-3942<br> ano.bkk@oecl.sg</span>
+<span id="loc-SINGAPORE" style="display: none;"> <span style="font-weight: bold; font-size: 11px;"> OECL (Singapore) Pte Ltd </span><br> Blk 511 Kampong Bahru Road <br> #04-02 Keppel Distripark <br> Singapore 099447</span>
+<span id="loc-PORTKLANG" style="display: none;"><span style="font-weight: bold; font-size: 11px;"> OECL (Malaysia) Sdn Bhd </span><br> MTBBT 2, 3A-5, <br> Jalan Batu Nilam 16, <br> The Landmark (Behind AEON Mall) <br> Bandar Bukit Tinggi 2<br>41200,Klang, Selangor D.E</span>
+<span id="loc-PASIRGUDANG" style="display: none;"><span style="font-weight: bold; font-size: 11px;">OECL (Malaysia) Sdn Bhd </span><br> Unit 20-03A, Level 20 Menara Zurich,<br> 15 Jalan Dato Abdullah Tahir, <br> 80300 Johor Bahru</span>
+<span id="loc-CHENNAI" style="display: none;"><span style="font-weight: bold; font-size: 11px;">OECL Shipping and Logistics Pvt Ltd,</span><br> Zafrulla Tower, 2A, 2nd Floor,<br> Old # 126, New # 257,<br> Angappa Naicken Street<br>Parry’s Corner, Chennai – 600001</span>
+<span id="loc-MUMBAI" style="display: none;"><span style="font-weight: bold; font-size: 11px;">OECL Shipping and Logistics Pvt Ltd,</span><br> 503, Midas, Sahar Plaza Complex,<br> Sir M.V Road<br> Andheri East,Mumbai 400059</span>
+<span id="loc-DELHI" style="display: none;"><span style="font-weight: bold; font-size: 11px;">OECL Shipping and Logistics Pvt Ltd</span><br>804 Madhuban Building <br> 55 Nehru Palace<br> New Delhi - 110019</span>
+<span id="loc-KOLKATA" style="display: none;"><span style="font-weight: bold; font-size: 11px;">OECL Shipping and Logistics Pvt Ltd,</span><br> Merlin Matrix, 3rd floor, Room No. 303<br> 10,D. N. BLOCK, SECTOR - V<br> SALT LAKE CITY,<br>Kolkata – 700091</span>
+<span id="loc-INDONESIA" style="display: none;"><span style="font-weight: bold; font-size: 11px;">PT.OECL Indonesia Logistic (Indonesia),</span><br> 408, Lina Building,<br> JL.HR Rasuna Said kav B7,<br> Jakarta</span>
+<span id="loc-THAILAND" style="display: none;"><span style="font-weight: bold; font-size: 11px;">OECL (THAILAND) CO., LTD.</span><br>109 CCT Building, 3rd Floor<br>Rm.3,Surawong Road, Suriyawongse,<br> Bangrak, Bangkok 10500 109 CCT Building</span>
 
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 	<script src="js/script.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
 
+
+	<link rel="stylesheet" href="js/validetta.min.css" >
+	<script src="js/validetta.js"></script>
 
 	<script>
 		$( document ).ready(function() {
 			$('.temp_cls').css("display","none");
 			$(".upload_banner").css("display","none");
 			$(".upload_text").css("display","none");
+			$(".img-upload-wrapper").css("display","none");
 	
 	
 	$(function(){
@@ -285,6 +299,7 @@
 				 reader.onload = function(e) {
 				  target =  e.target || e.srcElement;
 				   $("#image-preview").attr("src", target.result);
+				   $(".img-upload-wrapper").css("display","table-row");
 				 };
 				  reader.readAsDataURL(obj.files[0]);
 			  }
@@ -311,8 +326,18 @@
 		};
 	});
 	
-			
-			$(".generate_temp").click(function(){
+
+
+
+	$('#contact_form').validetta({
+        realTime: true,
+        display : 'inline',
+        errorTemplateClass : 'validetta-inline',
+        onValid : function( event ) {
+            event.preventDefault();
+		
+			// $(".generate_temp").click(function(){
+				
 	
 				$('.temp_cls').css("display","block");
 	
@@ -329,8 +354,8 @@
 				if($("#image-preview").attr("src") ==""){
 					$('#image-preview').css("display","none");
 
-					$("#Table_01").attr("width","514");
-					$('.mx-auto').attr("style","width: 546px;");
+					$("#Table_01").attr("width","614");
+					$('.mx-auto').attr("style","width: 646px;");
 					$('.mx-auto').addClass("pl-2");
 					
 
@@ -345,15 +370,44 @@
 	
 				$("#name_temp").html(f_name+" ".concat(l_name));
 				$("#designation_temp").html(designation);
+
 				$("#mobphone_temp").html(mobPhone);
 				$("#telphone_temp").html(telPhone);
-
 				$("#email_temp").html(email);
 				$("#skype_temp").html(skypeid);
 				
 				$("#text_banner_temp_data").html(tBanner);
+
+				$("#mobphone_temp_href").attr("href","tel:"+mobPhone);
+				$("#telphone_temp_href").attr("href","tel:"+telPhone);
+				$("#email_temp_href").attr("href","mailto:"+email);
+				$("#skype_temp_href").attr("href","skype:"+skypeid);
+
+				if(mobPhone==''){
+					$("#mobphone_temp_icon").hide();
+				}else{
+					$("#mobphone_temp_icon").show();
+				}
+
+				if(telPhone==''){
+					$("#telphone_temp_icon").hide();
+				}else{
+					$("#telphone_temp_icon").show();
+				}
+
+				if(email==''){
+					$("#email_temp_icon").hide();
+				}else{
+					$("#email_temp_icon").show();
+				}
+
+				if(skypeid==''){
+					$("#skype_temp_icon").hide();
+				}else{
+					$("#skype_temp_icon").show();
+				}
 	
-				
+			}
 			
 			});
 	
@@ -381,8 +435,6 @@
 					
 					$("#tBanner").val("")
 					$("#text_banner_temp_data").html("");
-	
-					
 					
 	
 				}
@@ -396,6 +448,7 @@
 	</script>
 
 <script>
+	
 	function copyClipboard() {
 	  var elm = document.getElementById("Table_01");
 	  // for Internet Explorer
@@ -418,7 +471,26 @@
 		document.execCommand("Copy");
 		alert("Copied signature content to clipboard");
 	  }
+
+	
+
 	}
+
+	function copyToClipboard_code(element) {
+		var $temp = $("<input>");
+		$("body").append($temp);
+		$temp.val($(element).html()).select();
+		document.execCommand("copy");
+		$temp.remove();
+		alert("Copied signature source code to clipboard");
+	}
+
+	
+	
+
+
+
+
 	</script>
 
 
@@ -439,7 +511,7 @@ var getCanvas; // global variable
 
 		 if($("#image-preview").attr("src") ==""){
 			
-				$("#btn-Convert-div").attr("style","width: 546px;;display: block;");
+				$("#btn-Convert-div").attr("style","width: 646px;;display: block;");
 
 			}else{
 				$("#btn-Convert-div").attr("style","width: 626px;;display: block;");

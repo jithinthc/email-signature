@@ -17,6 +17,7 @@
 	<h1 class="h4">Create Your email signature</h1>
 		<p>Enter your details in the below form and click generate button</p>
 		<hr>
+		<form id="contact_form">
 		<div class="row">
 			<!-- <div class="col-sm-12">
 				<div class="form-group">
@@ -27,13 +28,13 @@
 			<div class="col-sm-6">
 				<div class="form-group">
 					<label for="firstName">First name</label>
-					<input type="text" class="form-control" id="firstName">
+					<input type="text" class="form-control" id="firstName" data-validetta="required">
 				</div>
 			</div>
 			<div class="col-sm-6">
 				<div class="form-group">
 					<label for="lastName">Last name</label>
-					<input type="text" class="form-control" id="lastName">
+					<input type="text" class="form-control" id="lastName" data-validetta="required">
 				</div>
 			</div>
 			<div class="col-sm-6">
@@ -48,7 +49,7 @@
 			<div class="col-sm-6">
 				<div class="form-group">
 					<label for="mobPhone">Mobile No.</label>
-					<input type="text" class="form-control" id="mobPhone">
+					<input type="text" class="form-control" id="mobPhone" data-validetta="required,number">
 				</div>
 			</div>
 			<div class="col-sm-6">
@@ -60,7 +61,7 @@
 			<div class="col-sm-6">
 				<div class="form-group">
 					<label for="email">Email</label>
-					<input type="text" class="form-control" id="email">
+					<input type="text" class="form-control" id="email" data-validetta="required,email">
 				</div>
 			</div>
 			<div class="col-sm-6">
@@ -104,19 +105,25 @@
             </div>
 			
 			<div class="col-sm-12 text-center mt-4">
-				<input type="submit" class="btn btn-warning shadow generate_temp" value="Generate Signature">
+				<input type="submit" class="btn btn-danger shadow generate_temp" value="Generate Signature">
 			</div>
 		</div>
+		</form>
 </div>
 </div>
 
 
 <div class="col-md-12">
-<div class="mx-auto border rounded mt-4 mb-5" style="width: 610px;">
-<!-- Code for template starts -->
-<div class="temp_cls">
-    <table id="Table_01" width="601" height="176" border="0" cellpadding="0" cellspacing="0">
-        <style>
+
+
+<div class="mx-auto border rounded mt-4 mb-5" style="width: 810px;">
+
+
+	<div class="temp_cls" id="Table_02">
+
+	<!-- Code for template starts -->
+	<table id="Table_01" border="0" cellpadding="0" cellspacing="0" style="margin: 10px; background: #ffffff;">
+		<style>
             @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
             body{
                 font-family: 'Poppins', sans-serif;
@@ -125,141 +132,129 @@
                 font-size: 12px;
             }
         </style>
-        <tr>
-            <td rowspan="7">
-                <img src="images/01_logo.png" width="103" height="134" alt="logo"></td>
-            <td colspan="2">
-                <div style="padding: 10px 5px 5px;">
-                    <h3 style="font-size:17px; font-family: 'Poppins', sans-serif; margin: 0; color: #15278b; line-height: 1.2;"><span id="name_temp"></span></h3>
-                    <p style="font-size:13px; font-family: 'Poppins', sans-serif; margin: 0;  color: #15278b; line-height: 1.2;" id="designation_temp"></p>
-                </div></td>
-            <td rowspan="7">
-                <img src="images/Amass-Signature-New_03.png" width="2" height="134" alt=""></td>
-            <td rowspan="2">
-                <p style="font-size:12px; font-family: 'Poppins', sans-serif; color: #15278b; margin: 15px 0 0 5px; line-height: 1.4;"><b>Head Office</b><br> 202, Sultan Business centre, Oud Metha, <br> Dubai, UAE-P.O.Box 33463</p></td>
-            <td>
-                <img src="images/spacer.gif" width="1" height="54" alt=""></td>
-        </tr>
-        <tr>
-            <td rowspan="2">
-                <img src="images/05_icon-mail.png" width="24" height="16" alt="icon-mail"></td>
-            <td rowspan="2">
-                <a href="mailto:example@google.com" target="_blank" style="text-decoration: none;">
-                    <p style="font-size:12px; font-family: 'Poppins', sans-serif; color: #15278b; margin: 0 0 0 2px;" id="email_temp"></p></a></td>
-            <td>
-                <img src="images/spacer.gif" width="1" height="13" alt=""></td>
-        </tr>
-        <tr>
-            <td rowspan="5">
-                <p style="font-size:12px; font-family: 'Poppins', sans-serif; color: #15278b; margin: 3px 0 0 5px; line-height: 1.4;"><b>Warehouse</b><br> ZH 06/07/08, North Zone, <br> Jebel Ali Free Zone, Dubai, UAE</p></td>
-            <td>
-                <img src="images/spacer.gif" width="1" height="3" alt=""></td>
-        </tr>
-        <tr>
-            <td>
-                <img src="images/08_icon-telephone.png" width="24" height="16" alt="telephone"></td>
-            <td>
-                <a href="tel:9559595" target="_blank" style="text-decoration: none;">
-                    <p style="font-size:12px; font-family: 'Poppins', sans-serif; color: #15278b; margin: 0 0 0 2px;" id="telphone_temp"></p></a></td>
-            <td>
-                <img src="images/spacer.gif" width="1" height="16" alt=""></td>
-        </tr>
-        <tr>
-            <td>
-                <img src="images/10_icon-fax.png" width="24" height="16" alt="icon-fax"></td>
-            <td>
-                <a href="tel:9874" target="_blank" style="text-decoration: none;">
-                    <p style="font-size:12px; font-family: 'Poppins', sans-serif; color: #15278b; margin: 0 0 0 2px;" id="fax_temp"></p></a></td>
-            <td>
-                <img src="images/spacer.gif" width="1" height="16" alt=""></td>
-        </tr>
-        <tr>
-            <td>
-                <img src="images/12_icon-mobile.png" width="24" height="16" alt="icon-mobile"></td>
-            <td>
-                <a href="tel:9848" style="text-decoration: none;">
-                    <p style="font-size:12px; font-family: 'Poppins', sans-serif; color: #15278b; margin: 0 0 0 2px;" id="mobphone_temp"></p></a></td>
-            <td>
-                <img src="images/spacer.gif" width="1" height="16" alt=""></td>
-        </tr>
-        <tr>
-            <td>
-                <img src="images/14_icon-skype.png" width="24" height="16" alt="icon-skype"></td>
-            <td>
-                <a href="skype:jondoe" target="_blank" style="text-decoration: none;">
-                    <p style="font-size:12px; font-family: 'Poppins', sans-serif; color: #15278b; margin: 0 0 0 2px;" id="skype_temp"></p></a></td>
-            <td>
-                <img src="images/spacer.gif" width="1" height="16" alt=""></td>
-        </tr>
-        <tr>
-            <td colspan="5">
-                <table id="Table_02" width="600" height="42" border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td colspan="9">
-                            <img src="images/01_gutter-1.png" width="600" height="11" alt="gutter-1"></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="images/02_gutter-2.png" width="54" height="17" alt="gutter-2"></td>
-                        <td>
-                            <a href="https://www.facebook.com" target="_blank">
-                                <img src="images/03_icon-fb.png" width="45" height="17" border="0" alt="fb"></a></td>
-                        <td>
-                            <a href="https://www.twitter.com" target="_blank">
-                                <img src="images/04_icon-twitter.png" width="45" height="17" border="0" alt="twitter"></a></td>
-                        <td>
-                            <a href="https://www.instagram.com" target="_blank">
-                                <img src="images/05_icon-insta.png" width="44" height="17" border="0" alt="insta"></a></td>
-                        <td>
-                            <a href="https://www.linkedin.com" target="_blank">
-                                <img src="images/06_icon-linkedin.png" width="45" height="17" border="0" alt="linkedin"></a></td>
-                        <td>
-                            <img src="images/07_gutter-3.png" width="90" height="17" alt="gutter-4"></td>
-                        <td>
-                            <img src="images/08_icon-web.png" width="20" height="17" alt="web"></td>
-                        <td>
-                            <a href="https://www.amassdubai.com" target="_blank">
-                                <img src="images/09_web-address.png" width="159" height="17" border="0" alt="web-address"></a></td>
-                        <td>
-                            <img src="images/10_gutter-4.png" width="98" height="17" alt="gutter-4"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="9">
-                            <img src="images/11_gutter-5.png" width="600" height="14" alt="gutter-5"></td>
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <img src="images/spacer.gif" width="1" height="42" alt="">
-            </td>
-
-            <tr>
-                <td colspan="11">
-                    <img src="images/18_seperator.png" width="514" height="3" alt=""></td>
-            </tr>
-
-            <!-- Image banner starts below-->
-            <tr>
-                <td colspan="11" id="image_banner_temp">
-                    <img src="" id="image-preview1" width="514" style="margin-left: 50px;" alt="">
-                </td>
-                <td colspan="11" id="text_banner_temp" width="514" style="margin-left: 50px;" alt="">
-                    <p style=" margin-left: 50px;; font-size: 0.85rem; " id="text_banner_temp_data"></p>
-                </td>
-            </tr>
+		<tr>
+			<td style="vertical-align: top;">
+				<table>
+					<tr>
+						<td>
+							<img src="http://service.orangeot.com/template-4/images/01_logo.png" style="padding: 0 5px 0 0; margin: 0 5px 0 0;" alt="logo">
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td style="border-left: 1px solid #0A4A87; border-right: 1px solid #0A4A87; padding: 0 10px; vertical-align: top;">
+				<table>
+					<tr>
+						<td colspan="2">
+							<div style="padding: 0 10px 20px;">
+								<h3 style="font-size:22px; font-family: 'Poppins', sans-serif; margin: 0; font-weight: bold;"><span id="name_temp"></span></h3>
+								<p style="font-size:14px; font-family: 'Poppins', sans-serif; margin: 0; color: #0A4A87;" id="designation_temp"></p>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td width="24">
+							<img src="http://service.orangeot.com/template-4/images/05_icon-mail.png" width="24" height="16" alt="icon-mail" id="email_temp_icon"></td>
+						<td>
+							<a href="mailto:example@google.com" target="_blank" style="text-decoration: none;" id="email_temp_href">
+								<p style="font-size:12px; font-family: 'Poppins', sans-serif; color: #15278b; margin: 0 0 0 2px;" id="email_temp"></p></a></td>
+					</tr>
+					<tr>
+						<td width="24">
+							<img src="http://service.orangeot.com/template-4/images/08_icon-telephone.png" width="24" height="16" alt="telephone" id="telphone_temp_icon"></td>
+						<td>
+							<a href="tel:9559595" target="_blank" style="text-decoration: none;" id="telphone_temp_href">
+								<p style="font-size:12px; font-family: 'Poppins', sans-serif; color: #15278b; margin: 0 0 0 2px;" id="telphone_temp"></td>
+						
+					</tr>
+					<tr>
+						<td width="24">
+							<img src="http://service.orangeot.com/template-4/images/10_icon-fax.png" width="24" height="16" alt="icon-fax" id="fax_temp_icon"></td>
+						<td>
+							<a href="tel:9874" target="_blank" style="text-decoration: none;" id="fax_temp_href">
+								<p style="font-size:12px; font-family: 'Poppins', sans-serif; color: #15278b; margin: 0 0 0 2px;" id="fax_temp"></p></a></td>
+						
+					</tr>
+					<tr>
+						<td width="24">
+							<img src="http://service.orangeot.com/template-4/images/12_icon-mobile.png" width="24" height="16" alt="icon-mobile" id="mobphone_temp_icon"></td>
+						<td>
+							<a href="tel:9848" style="text-decoration: none;" id="mobphone_temp_href">
+								<p style="font-size:12px; font-family: 'Poppins', sans-serif; color: #15278b; margin: 0 0 0 2px;" id="mobphone_temp"></p></a></td>
+						
+					</tr>
+					<tr>
+						<td width="24">
+							<img src="http://service.orangeot.com/template-4/images/14_icon-skype.png" width="24" height="16" alt="icon-skype" id="skype_temp_icon"></td>
+						<td>
+							<a href="skype:jondoe" target="_blank" style="text-decoration: none;" id="skype_temp_href">
+								<p style="font-size:12px; font-family: 'Poppins', sans-serif; color: #15278b; margin: 0 0 0 2px;" id="skype_temp"></p></a></td>
+						
+					</tr>
+				</table>
+			</td>
+			<td style="vertical-align: top;">
+				<table>
+					<tr>
+						<td style="padding: 0 15px;">
+							<p style="font-size:12px; font-family: 'Poppins', sans-serif; color: #15278b; margin: 3px 0 0 5px; line-height: 1.4;"><b>Head Office</b><br> Plot No S60306, Street no S1500, Near Gate no 12 <br> Jafza South – Jebel Ali Free Zone , Dubai – UAE<br> 
+								<a href="tel:+97143400298" target="_blank" rel="noopener noreferrer" style="color: #15278b">Tel: +971 4 3400298</a> <br>
+								<a href="tel:+97148831004" target="_blank" rel="noopener noreferrer" style="color: #15278b">Fax +971 48831004</a></p></td>
+					</tr>
+					<tr>
+						<td style="padding: 0 15px;">
+							<p style="font-size:12px; font-family: 'Poppins', sans-serif; color: #15278b; margin: 10px 0 0 5px; line-height: 1.4;"><b>Warehouse</b><br> Plot No S60306, Street no S1500, Near Gate no 12 <br> Jafza South – Jebel Ali Free Zone , Dubai – UAE<br> 
+								<a href="tel:+97143400298" target="_blank" rel="noopener noreferrer" style="color: #15278b">Tel: +971 4 3400298</a> <br>
+								<a href="tel:+97148831004" target="_blank" rel="noopener noreferrer" style="color: #15278b">Fax +971 48831004</a></p></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3" style="text-align: center;">
+				<table style="margin: 5px auto 10px; border: 1px solid #0A4A87;" cellpadding="5px">
+					<tr>
+						<td><a href="https://www.facebook.com/Amassmiddleeast/" target="_blank" rel="noopener noreferrer"><img src="http://service.orangeot.com/template-4/images/03_icon-fb.png" alt="facebook icon"></a></td>
+						<td><a href="https://twitter.com/Amassfreightdu1" target="_blank" rel="noopener noreferrer"><img src="http://service.orangeot.com/template-4/images/04_icon-twitter.png" alt="twitter icon"></a></td>
+						<td><a href="https://www.linkedin.com/company/amassmiddleeast/" target="_blank" rel="noopener noreferrer"><img src="http://service.orangeot.com/template-4/images/06_icon-linkedin.png" alt="linkedin icon"></a></td>
+						<td><a href="https://www.instagram.com/amassdubai/" target="_blank" rel="noopener noreferrer"><img src="http://service.orangeot.com/template-4/images/05_icon-insta.png" alt="instagram icon"></a></td>
+						<td width="100"></td>
+						<td style="padding: 5px 20px 5px 5px;"><a href="https://www.amassdubai.com" target="_blank" rel="noopener noreferrer" style="font-size: 10px; color: #0A4A87"><span><img src="http://service.orangeot.com/template-4/images/08_icon-web.png" alt="web icon"><span>www.amassdubai.com</span></span></a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<table>
+					<!-- Image banner starts below-->
+					<tr>
+						<td colspan="11" id="image_banner_temp">
+							<img src="" id="image-preview1" width="514" style="margin-left: 50px;" alt="">
+						</td>
+						<td colspan="11" id="text_banner_temp" width="514" style="margin-left: 50px;" alt="">
+							<p style=" margin-left: 50px;; font-size: 0.85rem; " id="text_banner_temp_data"></p>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!-- Code for template ends -->
+	</div>
 
 
-        </tr>
-    </table>
-<!-- Code for template ends -->
-    <hr>
-		<div class="container-fluid">
+
+
+
+	<hr>
+		<div class="container-fluid temp_cls">
 			<form >
 				<button type="button" class="btn btn-danger" id="button1" onclick="copyClipboard()">Copy</button>
-				<input id="btn-Preview-Image" type="button" class="btn btn-info" value="Download Preview"/>
+				<button type="button" class="btn btn-secondary" id="button2" onclick="copyToClipboard_code('#Table_02')">Copy Source Code</button>
+				<input id="btn-Preview-Image" type="button" class="btn btn-secondary" value="Download Preview"/>
 			</form>
 		</div>
-	</div>
 </div>
 
 	<div class="mx-auto border rounded mt-4 mb-5" id="btn-Convert-div" style="display: none;">
@@ -275,6 +270,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 	<script src="js/script.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+
+	<link rel="stylesheet" href="js/validetta.min.css" >
+	<script src="js/validetta.js"></script>
 
     <script>
 		$( document ).ready(function() {
@@ -322,8 +320,13 @@
 		};
 	});
 	
-			
-			$(".generate_temp").click(function(){
+			$('#contact_form').validetta({
+				realTime: true,
+				display : 'inline',
+				errorTemplateClass : 'validetta-inline',
+				onValid : function( event ) {
+				event.preventDefault();
+			// $(".generate_temp").click(function(){
 	
 				$('.temp_cls').css("display","block");
 	
@@ -364,8 +367,47 @@
                 $("#fax_temp").html(fax);
 				
 				$("#text_banner_temp_data").html(tBanner);
+
+
+
+
+				$("#mobphone_temp_href").attr("href","tel:"+mobPhone);
+				$("#telphone_temp_href").attr("href","tel:"+telPhone);
+				$("#email_temp_href").attr("href","mailto:"+email);
+				$("#skype_temp_href").attr("href","skype:"+skypeid);
+				$("#fax_temp_href").attr("href","tel:"+fax);
+
+				if(mobPhone==''){
+					$("#mobphone_temp_icon").hide();
+				}else{
+					$("#mobphone_temp_icon").show();
+				}
+
+				if(telPhone==''){
+					$("#telphone_temp_icon").hide();
+				}else{
+					$("#telphone_temp_icon").show();
+				}
+
+				if(email==''){
+					$("#email_temp_icon").hide();
+				}else{
+					$("#email_temp_icon").show();
+				}
+
+				if(skypeid==''){
+					$("#skype_temp_icon").hide();
+				}else{
+					$("#skype_temp_icon").show();
+				}
+
+				if(fax==''){
+					$("#fax_temp_icon").hide();
+				}else{
+					$("#fax_temp_icon").show();
+				}
 	
-				
+			}
 			
 			});
 	
@@ -431,6 +473,15 @@
 		document.execCommand("Copy");
 		alert("Copied signature content to clipboard");
 	  }
+	}
+
+	function copyToClipboard_code(element) {
+		var $temp = $("<input>");
+		$("body").append($temp);
+		$temp.val($(element).html()).select();
+		document.execCommand("copy");
+		$temp.remove();
+		alert("Copied signature source code to clipboard");
 	}
 	</script>
 
